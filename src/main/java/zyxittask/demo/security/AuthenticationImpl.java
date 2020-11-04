@@ -5,7 +5,6 @@ import zyxittask.demo.model.Role;
 import zyxittask.demo.model.User;
 import zyxittask.demo.service.AccountService;
 import zyxittask.demo.service.UserService;
-
 import java.util.Collections;
 
 @Service

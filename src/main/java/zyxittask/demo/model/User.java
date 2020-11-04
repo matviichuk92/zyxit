@@ -13,6 +13,7 @@ import javax.persistence.ElementCollection;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.JoinColumn;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "users")
@@ -22,8 +23,10 @@ public class User {
     @Column(name = "user_id")
     private Long id;
     @Column(name = "name")
+    @NotNull
     private String name;
     @Column(name = "password")
+    @NotNull
     private String password;
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
     @CollectionTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"))
