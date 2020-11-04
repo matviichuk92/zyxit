@@ -16,11 +16,10 @@ import zyxittask.demo.service.UserService;
 public class MoneyTransferController {
     private final AccountService accountService;
     private final UserService userService;
-    private Model model;
 
-    public MoneyTransferController(UserService userService, AccountService accountService, UserService userService1) {
+    public MoneyTransferController(UserService userService, AccountService accountService) {
         this.accountService = accountService;
-        this.userService = userService1;
+        this.userService = userService;
     }
 
     @GetMapping

@@ -9,5 +9,3 @@ The project has an N-tier architecture:
 - controller(request processing and response sending);
 - service(business logic);
 - repository(CRUD operation with DB);
-___________________________________
-The project created with Spring Boot, Spring Security and H2 database.
