@@ -1,4 +1,4 @@
-package zyxit.task.controller;
+package zyxittask.demo.controller;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -6,8 +6,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import zyxit.task.service.AccountService;
-import zyxit.task.service.UserService;
+import zyxittask.demo.service.AccountService;
+import zyxittask.demo.service.UserService;
 
 @Controller
 @RequestMapping("/transfer")

@@ -1,6 +1,7 @@
-package zyxit.task.service;
+package zyxittask.demo.service;
 
-import zyxit.task.model.User;
+import zyxittask.demo.model.User;
+
 import java.util.Optional;
 
 public interface UserService {

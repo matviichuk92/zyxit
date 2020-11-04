@@ -1,11 +1,11 @@
-package zyxit.task.service.impl;
+package zyxittask.demo.service.impl;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import zyxit.task.model.Account;
-import zyxit.task.model.User;
-import zyxit.task.repository.AccountRepository;
-import zyxit.task.service.AccountService;
+import zyxittask.demo.model.Account;
+import zyxittask.demo.model.User;
+import zyxittask.demo.repository.AccountRepository;
+import zyxittask.demo.service.AccountService;
 
 @Service
 public class AccountServiceImpl implements AccountService {

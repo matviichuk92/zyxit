@@ -1,4 +1,4 @@
-package zyxit.task;
+package zyxittask.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

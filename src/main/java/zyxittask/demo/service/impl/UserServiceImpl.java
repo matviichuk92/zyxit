@@ -1,9 +1,10 @@
-package zyxit.task.service.impl;
+package zyxittask.demo.service.impl;
 
 import org.springframework.stereotype.Service;
-import zyxit.task.model.User;
-import zyxit.task.repository.UserRepository;
-import zyxit.task.service.UserService;
+import zyxittask.demo.model.User;
+import zyxittask.demo.repository.UserRepository;
+import zyxittask.demo.service.UserService;
+
 import java.util.Optional;
 
 @Service

@@ -1,4 +1,4 @@
-package zyxit.task.model;
+package zyxittask.demo.model;
 
 import java.util.Set;
 import javax.persistence.Column;

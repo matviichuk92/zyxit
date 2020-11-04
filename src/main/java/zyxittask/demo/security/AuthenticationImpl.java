@@ -1,10 +1,11 @@
-package zyxit.task.security;
+package zyxittask.demo.security;
 
 import org.springframework.stereotype.Service;
-import zyxit.task.model.Role;
-import zyxit.task.model.User;
-import zyxit.task.service.AccountService;
-import zyxit.task.service.UserService;
+import zyxittask.demo.model.Role;
+import zyxittask.demo.model.User;
+import zyxittask.demo.service.AccountService;
+import zyxittask.demo.service.UserService;
+
 import java.util.Collections;
 
 @Service

@@ -1,7 +1,7 @@
-package zyxit.task.service;
+package zyxittask.demo.service;
 
-import zyxit.task.model.Account;
-import zyxit.task.model.User;
+import zyxittask.demo.model.Account;
+import zyxittask.demo.model.User;
 
 public interface AccountService {
     Account add(User user);

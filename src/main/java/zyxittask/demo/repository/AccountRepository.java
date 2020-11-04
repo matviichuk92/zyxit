@@ -1,7 +1,7 @@
-package zyxit.task.repository;
+package zyxittask.demo.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import zyxit.task.model.Account;
+import zyxittask.demo.model.Account;
 
 public interface AccountRepository extends JpaRepository<Account, Long> {
 }
