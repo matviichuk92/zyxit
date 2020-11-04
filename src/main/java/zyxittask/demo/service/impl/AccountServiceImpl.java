@@ -27,6 +27,11 @@ public class AccountServiceImpl implements AccountService {
     }
 
     @Override
+    public Account get(Long id) {
+        return accountRepository.getOne(id);
+    }
+
+    @Override
     public void moneyTransfer(Long currentId, Long targetId, double summa) {
         Account currentAccount = accountRepository.getOne(currentId);
         currentAccount.setBalance(currentAccount.getBalance() - summa);

@@ -3,9 +3,11 @@ package zyxittask.demo.controller;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import zyxittask.demo.exception.MoneyTransferException;
 import zyxittask.demo.service.AccountService;
 import zyxittask.demo.service.UserService;
 
@@ -14,6 +16,7 @@ import zyxittask.demo.service.UserService;
 public class MoneyTransferController {
     private final AccountService accountService;
     private final UserService userService;
+    private Model model;
 
     public MoneyTransferController(UserService userService, AccountService accountService, UserService userService1) {
         this.accountService = accountService;
@@ -26,9 +29,14 @@ public class MoneyTransferController {
     }
 
     @PostMapping
-    public void moneyTransfer(Authentication authentication, Long targetId, double summa) {
+    public void moneyTransfer(Authentication authentication, Long targetId, double summa)
+            throws MoneyTransferException {
         UserDetails userDetails = (UserDetails) authentication.getPrincipal();
         Long currentId = userService.findByName(userDetails.getUsername()).get().getId();
-        accountService.moneyTransfer(currentId, targetId, summa);
+        try {
+            accountService.moneyTransfer(currentId, targetId, summa);
+        } catch (Exception e) {
+            throw new MoneyTransferException("User doesn't exist or you haven't enough money!");
+        }
     }
 }
