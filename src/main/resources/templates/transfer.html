@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title>Spring Security Example </title>
+</head>
+<body>
+
+<form th:action="@{/transfer}" method="post">
+    <div><label> Input target id: <input type="number" name="targetId"/> </label></div>
+    <div><label> Input summa <input type="number" name="summa"/> </label></div>
+    <br>
+    <div><input type="submit" value="Transfer"/></div>
+</form>
+<br>
+<form action="/" method="get">
+    <input type="submit" value="back to main"/>
+</form>
+</body>
+</html>

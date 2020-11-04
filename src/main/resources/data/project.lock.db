@@ -1,0 +1,6 @@
+#FileLock
+#Wed Nov 04 08:04:02 EET 2020
+server=192.168.0.104\:55342
+hostName=VP
+method=file
+id=17591dad8c227ccfafb5481a92fa1401ec3661b0afc
